@@ -13,8 +13,8 @@ int main(void) {
 
     scanf("%d", &n);
 
-    for (inicio = 0; inicio <= n; inicio++) {
-        if (n % inicio == 0) {
+    for (inicio = 1; inicio <= n; inicio++){
+        if (n % inicio == 0){
             printf("%d, ", inicio);
         }
     }
