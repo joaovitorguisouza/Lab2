@@ -14,8 +14,11 @@ int main(void) {
     scanf("%d", &n);
 
     for (inicio = 1; inicio <= n; inicio++){
-        if (n % inicio == 0){
+        if (n % inicio == 0 && n != inicio) {
             printf("%d, ", inicio);
+        }
+        if (n % inicio == 0 && n == inicio) {
+            printf("%d ", inicio);
         }
     }
     
