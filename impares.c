@@ -13,12 +13,10 @@ int main(void) {
 
     scanf("%d %d", &menor, &maior);
     for (inicio = menor; inicio <= maior; inicio++) {
-        if (inicio % 2 == 0) {
-            printf("%d\n, ", inicio);
+        if (inicio % 2 != 0) {
+            printf("%d, ", inicio);
         }
     }
-
     
-
     return 0;
 }
